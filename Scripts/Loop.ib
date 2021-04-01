@@ -1,0 +1,17 @@
+A = 1
+
+B = 1
+
+loop while A < 50
+	B = 1
+	loop until B == 50
+
+		output A
+		output B
+		output "======================"
+		B = B + 1
+	end loop
+	A = A + 1
+end loop
+
+output "Good"

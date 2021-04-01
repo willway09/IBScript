@@ -1,0 +1,15 @@
+
+
+//END INITIALIZATION
+A = 5
+B = 5
+
+loop while A > 0
+	loop while B > 0
+		output A * B
+		B = B - 1
+	end loop
+	A = A - 1
+end loop
+
+output "Got here"

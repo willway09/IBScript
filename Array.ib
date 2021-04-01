@@ -1,0 +1,14 @@
+
+
+//END INITIALIZATION
+ARRAY = [50]
+
+loop I from 0 to 49
+	ARRAY[I] = I / 2
+end loop
+
+loop I from 0 to 49
+	output ARRAY[I]
+end loop
+
+

@@ -1,0 +1,4 @@
+//Hello World
+
+//END INITIALIZATION
+output "Hello World"

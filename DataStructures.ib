@@ -1,0 +1,33 @@
+MYSTACK = [stack]
+
+SURVEY = [collection]
+
+loop I from 1 to 100
+	SURVEY.addItem(I)
+end loop
+
+
+
+//END INITIALIZATION
+// MYSTACK is a stack, initially empty
+
+COUNT = 0 // number of names
+
+loop while SURVEY.hasNext()
+	MYSTACK.push( SURVEY.getNext() )
+	COUNT = COUNT + 1
+end loop
+
+MYARRAY = [COUNT]
+
+// Fill the array, MYARRAY, with the names in the stack
+loop POS from 0 to COUNT-1
+	MYARRAY[POS] = MYSTACK.pop()
+end loop
+
+loop I from 0 to COUNT - 1
+	output MYARRAY[I]
+end loop
+
+
+

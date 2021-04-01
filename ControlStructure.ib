@@ -1,0 +1,28 @@
+I = 1
+J = 1
+X = 1
+Y = 1
+
+
+//END INITIALIZATION
+loop I from 1 to 10
+	output I
+end loop
+
+loop J from 1 to 10
+
+	if J mod 2 == 0 then
+		output J
+	end if
+
+end loop
+
+loop X from 1 to 20
+	Y = 1
+	loop Y from 1 to 20
+		output X
+		output Y
+	end loop
+end loop
+
+

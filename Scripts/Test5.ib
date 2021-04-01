@@ -1,0 +1,6 @@
+
+
+STUFF.resetNext()
+loop while STUFF.hasNext()
+	ITEM = STUFF.getNext() + "Hello World"
+end loop

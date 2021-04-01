@@ -1,0 +1,13 @@
+
+
+
+//END INITIALIZATION
+STR = "Hello World"
+INTEGER = 56
+BOOLEAN=true
+
+output STR
+output INTEGER
+output BOOLEAN
+
+

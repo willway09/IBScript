@@ -1,0 +1,15 @@
+I = 1
+
+loop while I <= 10
+
+
+	J = 1
+	loop while J <= 10
+		output I + J
+		
+		J = J + 1
+	end loop
+
+	I = I + 1
+
+end loop

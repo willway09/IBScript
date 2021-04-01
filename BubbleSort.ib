@@ -1,0 +1,88 @@
+ARRAY = [50]
+ARRAYSIZE = 50
+
+ARRAY[0] = 13
+ARRAY[1] = 46
+ARRAY[2] = 32
+ARRAY[3] = 1
+ARRAY[4] = 29
+ARRAY[5] = 23
+ARRAY[6] = 17
+ARRAY[7] = 41
+ARRAY[8] = 30
+ARRAY[9] = 32
+ARRAY[10] = 24
+ARRAY[11] = 40
+ARRAY[12] = 49
+ARRAY[13] = 43
+ARRAY[14] = 49
+ARRAY[15] = 48
+ARRAY[16] = 4
+ARRAY[17] = 28
+ARRAY[18] = 41
+ARRAY[19] = 3
+ARRAY[20] = 38
+ARRAY[21] = 34
+ARRAY[22] = 46
+ARRAY[23] = 15
+ARRAY[24] = 26
+ARRAY[25] = 43
+ARRAY[26] = 35
+ARRAY[27] = 36
+ARRAY[28] = 4
+ARRAY[29] = 19
+ARRAY[30] = 10
+ARRAY[31] = 7
+ARRAY[32] = 45
+ARRAY[33] = 23
+ARRAY[34] = 39
+ARRAY[35] = 27
+ARRAY[36] = 28
+ARRAY[37] = 40
+ARRAY[38] = 23
+ARRAY[39] = 38
+ARRAY[40] = 15
+ARRAY[41] = 12
+ARRAY[42] = 30
+ARRAY[43] = 36
+ARRAY[44] = 39
+ARRAY[45] = 4
+ARRAY[46] = 42
+ARRAY[47] = 47
+ARRAY[48] = 6
+ARRAY[49] = 25
+
+
+
+
+
+
+
+
+//END INITIALIZATION
+loop I from 0 to ARRAYSIZE - 1
+	
+	loop J from 0 to ARRAYSIZE - 2 - I	
+		
+		if(ARRAY[J+1] < ARRAY[J]) then
+
+			TEMP = ARRAY[J]
+			ARRAY[J] = ARRAY[J+1]
+			ARRAY[J+1] = TEMP
+			
+		end if
+
+	end loop
+
+end loop
+
+loop I from 0 to ARRAYSIZE - 1
+	output ARRAY[I]
+end loop
+
+
+
+
+
+
+
