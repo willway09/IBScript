@@ -110,9 +110,6 @@ public class GUI {
 						}
 						
 						load();
-					
-					
-					
 				}
 				
 				
@@ -223,7 +220,16 @@ public class GUI {
 		f.setVisible(true);
 		
 		try {
-			Process proc = Runtime.getRuntime().exec("ibscript.exe " + file.getCanonicalPath());
+
+			Process proc;
+
+      if(System.getProperty("os.name").contains("Windows")) {
+        proc = Runtime.getRuntime().exec("ibscript.exe " + file.getCanonicalPath());
+      } else {
+
+        proc = Runtime.getRuntime().exec("./ibscript " + file.getCanonicalPath());
+      }
+
 			BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
 			BufferedReader err = new BufferedReader(new InputStreamReader(proc.getErrorStream()));
 			
@@ -240,6 +246,7 @@ public class GUI {
 			);
 			
 		} catch(IOException e) {
+      System.out.println(e);
 			
 		}
 		

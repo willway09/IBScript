@@ -59,6 +59,10 @@ ARRAY[49] = 25
 
 
 
+
+
+
+
 //END INITIALIZATION
 loop I from 0 to ARRAYSIZE - 1
 	
@@ -79,6 +83,10 @@ end loop
 loop I from 0 to ARRAYSIZE - 1
 	output ARRAY[I]
 end loop
+
+
+
+
 
 
 

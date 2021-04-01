@@ -149,7 +149,10 @@ bool Conditional::evaluateCondition() {
 	bool* rtnBool = (bool*)(result->getValue());
 	
 	bool rtn = *rtnBool;
-	delete rtnBool;
+
+
+	//Dubious uncommenting
+	//delete rtnBool;
 	
 	if(result->getScope() == -1)
 		delete result;

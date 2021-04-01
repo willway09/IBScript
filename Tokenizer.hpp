@@ -31,7 +31,7 @@ class Tokenizer {
 			//std::string* token = new std::string();
 			
 			std::string::iterator it=base.begin();
-			
+
 			while(it != base.end()) {
 				if(std::isspace(*it)) {
 					while(getCharType(*it) == 0 && (it != base.end())) {

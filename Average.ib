@@ -1004,7 +1004,6 @@ STOCK[	999	]=	39
 
 
 
-
 //END INITIALIZATION
 COUNT = 0
 TOTAL = 0
@@ -1021,8 +1020,3 @@ if NOT COUNT == 0 then
 else
 	output "There are no non-zero values"
 end if
-
-
-
-
-

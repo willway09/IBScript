@@ -4,6 +4,7 @@
 
 
 
+
 //END INITIALIZATION
 A = 23
 B = 19
@@ -19,6 +20,7 @@ output C
 
 C = (56 / 2 + A) * (29 - B) *(5-10)
 output C
+
 
 
 

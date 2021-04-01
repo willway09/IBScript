@@ -114,7 +114,13 @@ bool Loop::evaluateCondition() {
 	bool* rtnBool = (bool*)(result->getValue());
 	
 	bool rtn = *rtnBool;
-	delete rtnBool;
+
+
+	//Dubious uncommenting
+	//delete rtnBool;
+
+
+	//std::cout << "Scope" << result->getScope() << std::endl;
 	
 	if(result->getScope() == -1)
 		delete result;
